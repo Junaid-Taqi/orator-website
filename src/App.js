@@ -1,12 +1,13 @@
-import { useState, useEffect } from 'react';
 import './App.css';
+import ReCAPTCHA from 'react-google-recaptcha';
+import { useState, useEffect, useRef } from 'react';
 
 /* Logo: cyan square with white monitor icon */
 function LogoIcon() {
   return (
     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="logo-icon">
       <rect width="32" height="32" rx="6" fill="#22D3EE" />
-      <rect x="6" y="7" width="20" height="12" rx="1" fill="white"/><rect x="13" y="19" width="6" height="3" rx="0.5" fill="white"/>
+      <rect x="6" y="7" width="20" height="12" rx="1" fill="white" /><rect x="13" y="19" width="6" height="3" rx="0.5" fill="white" />
     </svg>
   );
 }
@@ -14,6 +15,18 @@ function LogoIcon() {
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [demoModalOpen, setDemoModalOpen] = useState(false);
+
+  // Form state
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [organization, setOrganization] = useState('');
+  const [message, setMessage] = useState('');
+  const [captchaValue, setCaptchaValue] = useState(null);
+  const [errors, setErrors] = useState({});
+  const recaptchaRef = useRef(null);
+
+  // Toast messages
+  const [toast, setToast] = useState(null);
 
   const closeMenu = () => setMenuOpen(false);
   const openDemoModal = () => {
@@ -38,6 +51,63 @@ function App() {
       document.body.style.overflow = '';
     };
   }, [menuOpen, demoModalOpen]);
+
+  // ---------------- VALIDATION ----------------
+  const validateForm = () => {
+    const newErrors = {};
+    if (!fullName.trim()) newErrors.fullName = 'Full Name is required';
+    if (!email.trim()) newErrors.email = 'Email is required';
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) newErrors.email = 'Enter a valid email';
+    if (!organization.trim()) newErrors.organization = 'Organization is required';
+    if (!message.trim()) newErrors.message = 'Message is required';
+    if (!captchaValue) newErrors.captcha = 'Please verify that you are not a robot';
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  // ---------------- SUBMIT ----------------
+  const handleSubmitDemo = async () => {
+    if (!validateForm()) return;
+
+    try {
+      const payload = {
+        token: captchaValue,
+        fullName,
+        contactEmail: email,
+        organization,
+        message,
+      };
+
+      const response = await fetch('/o/requestDemoApplication/requestDemo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        alert(data.message || 'Demo request submitted successfully!');
+        // Reset form
+        setFullName('');
+        setEmail('');
+        setOrganization('');
+        setMessage('');
+        setCaptchaValue(null);
+        setErrors({});
+        if (recaptchaRef.current) recaptchaRef.current.reset();
+        closeDemoModal();
+      } else {
+        alert(data.message || 'Something went wrong!');
+      }
+    } catch (err) {
+      console.error(err);
+      alert(err?.message || 'Request failed');
+    }
+  };
+
 
   return (
     <div className="landing">
@@ -108,42 +178,42 @@ function App() {
           <div className="features-grid">
             <article className="feature-card glass">
               <div className="feature-icon-wrap">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
               </div>
               <h3>Smart City Solutions</h3>
               <p>Digital solutions tailored to municipalities. Connect citizens with real-time information while maintaining transparency and improving communication.</p>
             </article>
             <article className="feature-card glass">
               <div className="feature-icon-wrap">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg>
               </div>
               <h3>Increased Visibility</h3>
               <p>Through digital signage and mobile apps, content reaches more citizens and enables better engagement with your community.</p>
             </article>
             <article className="feature-card glass">
               <div className="feature-icon-wrap">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 3v18h18"/><path d="M7 14v4M11 10v8M15 6v12M19 2v14"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 3v18h18" /><path d="M7 14v4M11 10v8M15 6v12M19 2v14" /></svg>
               </div>
               <h3>Data That Matters</h3>
               <p>Harness the power of real-time analytics. Track engagement, monitor display health, and make data-driven decisions to better serve your community.</p>
             </article>
             <article className="feature-card glass">
               <div className="feature-icon-wrap">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
               </div>
               <h3>Risk-Free with Maximum Value</h3>
               <p>Advanced digital infrastructure without financial or operational risk, built on a proven platform designed for municipalities.</p>
             </article>
             <article className="feature-card glass">
               <div className="feature-icon-wrap">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>
               </div>
               <h3>Real-Time System</h3>
               <p>Your content updates instantly across all displays. Respond to emergencies, announce events, and keep citizens informed in real-time.</p>
             </article>
             <article className="feature-card glass">
               <div className="feature-icon-wrap">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" /></svg>
               </div>
               <h3>Easy Setup & Management</h3>
               <p>Intuitive platform designed for municipal teams. Manage all content, displays, and citizen interactions from a single unified dashboard.</p>
@@ -163,7 +233,7 @@ function App() {
             <div className="platform-blocks">
               <div className="platform-block glass">
                 <div className="platform-block-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" /></svg>
                 </div>
                 <div>
                   <h4>Outdoor Digital Totems</h4>
@@ -172,7 +242,7 @@ function App() {
               </div>
               <div className="platform-block glass">
                 <div className="platform-block-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="5" y="2" width="14" height="20" rx="2" /><path d="M12 18h.01" /></svg>
                 </div>
                 <div>
                   <h4>Mobile & Web Portal</h4>
@@ -181,7 +251,7 @@ function App() {
               </div>
               <div className="platform-block glass">
                 <div className="platform-block-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 3v18h18"/><path d="M7 14v4M11 10v8M15 6v12M19 2v14"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 3v18h18" /><path d="M7 14v4M11 10v8M15 6v12M19 2v14" /></svg>
                 </div>
                 <div>
                   <h4>Admin Dashboard</h4>
@@ -240,54 +310,66 @@ function App() {
         <div className="demo-modal-overlay" onClick={closeDemoModal}>
           <div className="demo-modal" onClick={(e) => e.stopPropagation()}>
             <h2 className="demo-modal-title">Request a Demo</h2>
-            <form className="demo-modal-form" onSubmit={(e) => { e.preventDefault(); closeDemoModal(); }}>
+            <form className="demo-modal-form" onSubmit={(e) => { e.preventDefault(); handleSubmitDemo(); }}>
               <div className="demo-form-group">
                 <label htmlFor="demo-name">Full Name</label>
                 <input
                   type="text"
                   id="demo-name"
-                  name="name"
+                  value={fullName}
+                  onChange={(e) => setFullName(e.target.value)}
                   placeholder="John Doe"
                   required
                 />
+                {errors.fullName && <small className="error">{errors.fullName}</small>}
               </div>
               <div className="demo-form-group">
                 <label htmlFor="demo-email">Email</label>
                 <input
                   type="email"
                   id="demo-email"
-                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="john@municipality.gov"
                   required
                 />
+                {errors.email && <small className="error">{errors.email}</small>}
               </div>
               <div className="demo-form-group">
                 <label htmlFor="demo-org">Organization</label>
                 <input
                   type="text"
                   id="demo-org"
-                  name="organization"
+                  value={organization}
+                  onChange={(e) => setOrganization(e.target.value)}
                   placeholder="City of..."
                   required
                 />
+                {errors.organization && <small className="error">{errors.organization}</small>}
               </div>
               <div className="demo-form-group">
                 <label htmlFor="demo-message">Message</label>
                 <textarea
                   id="demo-message"
-                  name="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   placeholder="Tell us about your needs..."
                   rows="4"
                   required
                 />
+                {errors.message && <small className="error">{errors.message}</small>}
+              </div>
+              <div className="demo-form-group">
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey="6Ld7PGosAAAAAKW0wruLeowTCOdG6j8c4qInVmg8"
+                  onChange={(value) => setCaptchaValue(value)}
+                />
+                {errors.captcha && <small className="error">{errors.captcha}</small>}
               </div>
               <div className="demo-modal-buttons">
-                <button type="button" className="btn-demo-cancel" onClick={closeDemoModal}>
-                  Cancel
-                </button>
-                <button type="submit" className="btn-demo-submit">
-                  Send Request
-                </button>
+                <button type="button" className="btn-demo-cancel" onClick={closeDemoModal}>Cancel</button>
+                <button type="submit" className="btn-demo-submit">Send Request</button>
               </div>
             </form>
           </div>
