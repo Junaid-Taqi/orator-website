@@ -680,14 +680,14 @@ html, body, *{
   font-size: 1.75rem;
   font-weight: 700;
   color: #ffffff;
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
   letter-spacing: -0.01em;
 }
 
 .demo-modal-form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .demo-form-group {
