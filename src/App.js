@@ -6,6 +6,8 @@ import Features from './components/Features';
 import Benefits from './components/Benefits';
 import Footer from './components/Footer';
 import DemoModal from './components/DemoModal';
+import Stats from './components/Stats';
+import Transform from './components/Trasnform';
 
 
 function App() {
@@ -67,6 +69,10 @@ function App() {
       <Features />
 
       <Benefits />
+
+      <Stats />
+
+      <Transform openDemoModal={openDemoModal} />
 
       <Footer />
 

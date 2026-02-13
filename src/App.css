@@ -1,6 +1,8 @@
-/* ORATOR - Smart City Digital Signage Platform (Figma color scheme) */
-@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
+@font-face {
+  font-family: 'Calibri';
+  src: url('fonts/DMSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
 :root {
   /* Primary palette - Figma */
   --color-cyan: #22D3EE;           /* Logo, Request Demo, feature icon bg */
@@ -443,6 +445,81 @@ html, body, *{
 .platform-block span {
   font-size: 0.9rem;
   color: var(--text-soft);
+}
+
+/* Stats strip below platform section */
+.stats-section {
+  background: rgba(255, 255, 255, 19%);
+  padding: 3rem 1.5rem 2.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2.5rem;
+  text-align: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.stat-value {
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+}
+
+.stat-cyan {
+  color: #7ee9ff;
+}
+
+.stat-green {
+  color: #6ee7b7;
+}
+
+.stat-purple {
+  color: #c4b5fd;
+}
+
+.stat-orange {
+  color: #fed7aa;
+}
+
+/* Transform CTA section */
+.transform-cta {
+  background: linear-gradient(90deg, var(--color-blue-dark) 0%, var(--color-teal) 100%);
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.transform-inner {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.transform-title {
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  color: var(--text);
+}
+
+.transform-subtitle {
+  margin: 0 0 2rem;
+  color: var(--text-soft);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.transform-button {
+  padding-inline: 2.25rem;
 }
 
 /* Key Benefits box - same glass as Figma */
