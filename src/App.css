@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Calibri';
+  font-family: 'DM Sans';
   src: url('fonts/DMSans-Regular.ttf') format('truetype');
   font-weight: 400;
 }
@@ -21,7 +21,6 @@
   /* Glass */
   --glass-bg: rgba(255, 255, 255, 0.08);
   --glass-border: rgba(255, 255, 255, 0.12);
-  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
   --radius: 10px;
   --radius-lg: 16px;
   --transition: 0.2s ease;
@@ -55,7 +54,6 @@ html, body, *{
   /* Figma: deep indigo/purple top → medium blue → teal bottom */
   background: linear-gradient(180deg, var(--color-indigo) 0%, var(--color-blue-dark) 40%, var(--color-teal) 100%);
   color: var(--text);
-  font-family: var(--font-sans);
   position: relative;
 }
 
@@ -715,7 +713,6 @@ html, body, *{
   border-radius: 10px;
   color: #ffffff;
   font-size: 0.95rem;
-  font-family: var(--font-sans);
   transition: border-color var(--transition), background var(--transition);
 }
 
@@ -750,7 +747,6 @@ html, body, *{
   border-radius: 10px;
   font-size: 0.95rem;
   font-weight: 600;
-  font-family: var(--font-sans);
   cursor: pointer;
   transition: all var(--transition);
   border: none;
