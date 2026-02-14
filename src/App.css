@@ -263,13 +263,18 @@ html, body, *{
   align-items: center;
 }
 
+.hero-banner{
+  width: 420px;
+  max-width: 100%;
+}
+
 .hero-card {
   border-radius: var(--radius-lg);
   overflow: hidden;
   aspect-ratio: 16/10;
   min-width: 100%;
-  max-width: 520px;
-  border: 1px solid var(--glass-border);
+  display: flex;
+  justify-content: end;
 }
 
 .hero-card-placeholder {

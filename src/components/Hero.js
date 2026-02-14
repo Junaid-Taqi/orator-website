@@ -1,3 +1,4 @@
+import banner from '../images/orator-banner-img.png';
 
 export default function Hero({ openDemoModal }) {
     return (
@@ -14,7 +15,7 @@ export default function Hero({ openDemoModal }) {
             </div>
             <div className="hero-visual">
                 <div className="hero-card">
-                    <div className="hero-card-placeholder">ORATOR Digital Signage Display</div>
+                    <img src={banner} alt="ORATOR Digital Signage Display" className="hero-banner" />
                 </div>
             </div>
         </section>
