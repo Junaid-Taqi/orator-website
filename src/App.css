@@ -137,6 +137,39 @@ html, body, *{
   opacity: 0.9;
 }
 
+.language-selector {
+  display: flex;
+  align-items: center;
+}
+
+.language-dropdown {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.language-dropdown:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--color-cyan);
+}
+
+.language-dropdown:focus {
+  outline: none;
+  border-color: var(--color-cyan);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.language-dropdown option {
+  background: #1a1a2e;
+  color: var(--text);
+}
+
 /* Hamburger toggle - only for responsive */
 .nav-toggle {
   display: none;
@@ -869,6 +902,15 @@ html, body, *{
   .nav-links .btn-cyan {
     margin-top: 0.5rem;
     justify-content: center;
+  }
+
+  .language-selector {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--glass-border);
+  }
+
+  .language-dropdown {
+    width: 100%;
   }
 }
 

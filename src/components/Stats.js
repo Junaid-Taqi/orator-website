@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 const Stats = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="section stats-section" >
             <div className="container stats-grid">
@@ -11,12 +15,12 @@ const Stats = () => {
                     <div className="stat-label">Support Available</div>
                 </div>
                 <div className="stat-item">
-                    <div className="stat-value stat-purple">50+</div>
-                    <div className="stat-label">Municipalities Trust Us</div>
+                    <div className="stat-value stat-cyan">50+</div>
+                    <div className="stat-label">{t('STATS_MUNICIPALITIES')}</div>
                 </div>
                 <div className="stat-item">
                     <div className="stat-value stat-orange">100K+</div>
-                    <div className="stat-label">Active Citizens</div>
+                    <div className="stat-label">{t('STATS_CITIZENS')}</div>
                 </div>
             </div>
       </section >

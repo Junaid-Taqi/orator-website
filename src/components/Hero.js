@@ -1,16 +1,19 @@
 import banner from '../images/orator-banner-img.png';
+import { useTranslation } from 'react-i18next';
 
 export default function Hero({ openDemoModal }) {
+    const { t } = useTranslation();
+
     return (
         <section id="home" className="hero">
             <div className="hero-content">
-                <h1 className="hero-title">Smart City Digital Signage Platform</h1>
+                <h1 className="hero-title">{t('HERO_TITLE')}</h1>
                 <p className="hero-subtitle">
-                    Empower your municipality with ORATOR - the complete digital communication platform that connects citizens, manages content, and delivers real-time information across all channels.
+                    {t('HERO_SUBTITLE')}
                 </p>
                 <div className="hero-cta">
-                    <a href="#signup" className="btn btn-green btn-lg" onClick={(e) => { e.preventDefault(); openDemoModal(); }}>Get Started →</a>
-                    <a href="#demo" className="btn btn-dark btn-lg">Watch Demo</a>
+                    <a href="#signup" className="btn btn-green btn-lg" onClick={(e) => { e.preventDefault(); openDemoModal(); }}>{t('HERO_GET_STARTED')}</a>
+                    <a href="#demo" className="btn btn-dark btn-lg">{t('HERO_WATCH_DEMO')}</a>
                 </div>
             </div>
             <div className="hero-visual">

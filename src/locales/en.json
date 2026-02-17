@@ -1,0 +1,91 @@
+{
+  "HEADER_FEATURES": "Features",
+  "HEADER_BENEFITS": "Benefits",
+  "HEADER_CONTACT": "Contact",
+  "HEADER_REQUEST_DEMO": "Request Demo",
+  "HEADER_LOGIN": "Login",
+  
+  "HERO_TITLE": "Smart City Digital Signage Platform",
+  "HERO_SUBTITLE": "Empower your municipality with ORATOR - the complete digital communication platform that connects citizens, manages content, and delivers real-time information across all channels.",
+  "HERO_GET_STARTED": "Get Started →",
+  "HERO_WATCH_DEMO": "Watch Demo",
+  
+  "FEATURE_SMART_CITY_TITLE": "Smart City Solutions",
+  "FEATURE_SMART_CITY_DESC": "Digital solutions tailored to municipalities. Connect citizens with real-time information while maintaining transparency and improving communication.",
+  
+  "FEATURE_VISIBILITY_TITLE": "Increased Visibility",
+  "FEATURE_VISIBILITY_DESC": "Through digital signage and mobile apps, content reaches more citizens and enables better engagement with your community.",
+  
+  "FEATURE_ANALYTICS_TITLE": "Data That Matters",
+  "FEATURE_ANALYTICS_DESC": "Harness the power of real-time analytics. Track engagement, monitor display health, and make data-driven decisions to better serve your community.",
+  
+  "FEATURE_VALUE_TITLE": "Risk-Free with Maximum Value",
+  "FEATURE_VALUE_DESC": "Advanced digital infrastructure without financial or operational risk, built on a proven platform designed for municipalities.",
+  
+  "FEATURE_REALTIME_TITLE": "Real-Time System",
+  "FEATURE_REALTIME_DESC": "Your content updates instantly across all displays. Respond to emergencies, announce events, and keep citizens informed in real-time.",
+  
+  "FEATURE_SETUP_TITLE": "Easy Setup & Management",
+  "FEATURE_SETUP_DESC": "Intuitive platform designed for municipal teams. Manage all content, displays, and citizen interactions from a single unified dashboard.",
+  
+  "BENEFITS_TITLE": "One Platform, Every Screen",
+  "BENEFITS_SUBTITLE": "ORATOR delivers your content seamlessly across outdoor digital totems, indoor displays, web portals, and mobile devices - all managed from a single dashboard.",
+  
+  "BENEFITS_OUTDOOR_TOTEMS": "Outdoor Digital Totems",
+  "BENEFITS_OUTDOOR_TOTEMS_DESC": "High-visibility outdoor displays",
+  
+  "BENEFITS_MOBILE_WEB": "Mobile & Web Portal",
+  "BENEFITS_MOBILE_WEB_DESC": "Citizen engagement platform",
+  
+  "BENEFITS_ADMIN_DASHBOARD": "Admin Dashboard",
+  "BENEFITS_ADMIN_DASHBOARD_DESC": "Centralized content management",
+  
+  "BENEFITS_KEY_BENEFITS_TITLE": "Key Benefits",
+  "BENEFITS_CLOUD": "Cloud-based content management",
+  "BENEFITS_MULTI_DISPLAY": "Multi-display support (outdoor totems, indoor screens, mobile)",
+  "BENEFITS_CITIZEN_PORTAL": "Citizen engagement portal",
+  "BENEFITS_REPORTING": "Problem reporting & tracking",
+  "BENEFITS_ANALYTICS": "Real-time analytics dashboard",
+  "BENEFITS_EMERGENCY": "Emergency override capability",
+  "BENEFITS_SCHEDULED": "Scheduled content timelines",
+  
+  "STATS_MUNICIPALITIES": "Municipalities",
+  "STATS_DISPLAYS": "Digital Displays",
+  "STATS_MESSAGES": "Messages Delivered",
+  "STATS_CITIZENS": "Citizens Engaged",
+  
+  "TRANSFORM_TITLE": "Transform How Citizens Engage",
+  "TRANSFORM_SUBTITLE": "Real-time communication that strengthens the bond between municipalities and their communities.",
+  
+  "DEMO_TITLE": "Request a Demo",
+  "DEMO_FULL_NAME_LABEL": "Full Name",
+  "DEMO_FULL_NAME_PLACEHOLDER": "John Doe",
+  "DEMO_EMAIL_LABEL": "Email",
+  "DEMO_EMAIL_PLACEHOLDER": "john@municipality.gov",
+  "DEMO_ORGANIZATION_LABEL": "Organization",
+  "DEMO_ORGANIZATION_PLACEHOLDER": "City of...",
+  "DEMO_MESSAGE_LABEL": "Message",
+  "DEMO_MESSAGE_PLACEHOLDER": "Tell us about your needs...",
+  "DEMO_CANCEL_BUTTON": "Cancel",
+  "DEMO_SUBMIT_BUTTON": "Send Request",
+  
+  "DEMO_ERROR_FULL_NAME": "Full Name is required",
+  "DEMO_ERROR_EMAIL": "Email is required",
+  "DEMO_ERROR_INVALID_EMAIL": "Enter a valid email",
+  "DEMO_ERROR_ORGANIZATION": "Organization is required",
+  "DEMO_ERROR_MESSAGE": "Message is required",
+  "DEMO_ERROR_CAPTCHA": "Please verify that you are not a robot",
+  
+  "DEMO_SUCCESS_MESSAGE": "Demo request submitted successfully!",
+  "DEMO_ERROR_GENERIC": "Something went wrong!",
+  
+  "FOOTER_TAGLINE": "Smart City Digital Signage Platform",
+  "FOOTER_PRODUCT_HEADING": "Product",
+  "FOOTER_PRODUCT_FEATURES": "Features",
+  "FOOTER_PRODUCT_BENEFITS": "Benefits",
+  "FOOTER_PRODUCT_DEMO": "Demo",
+  "FOOTER_COMPANY_HEADING": "Company",
+  "FOOTER_COMPANY_ABOUT": "About",
+  "FOOTER_COMPANY_CONTACT": "Contact",
+  "FOOTER_COPYRIGHT": "ORATOR. All rights reserved."
+}

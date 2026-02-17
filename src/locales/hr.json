@@ -1,0 +1,91 @@
+{
+  "HEADER_FEATURES": "Značajke",
+  "HEADER_BENEFITS": "Prednosti",
+  "HEADER_CONTACT": "Kontakt",
+  "HEADER_REQUEST_DEMO": "Zatraži Demo",
+  "HEADER_LOGIN": "Prijava",
+  
+  "HERO_TITLE": "Platforma za Smart City Digital Signage",
+  "HERO_SUBTITLE": "Osnažite vašu općinu s ORATOR-om - kompletnom platformom za digitalnu komunikaciju koja povezuje građane, upravlja sadržajem i isporučuje informacije u realnom vremenu preko svih kanala.",
+  "HERO_GET_STARTED": "Započni →",
+  "HERO_WATCH_DEMO": "Pogledaj Demo",
+  
+  "FEATURE_SMART_CITY_TITLE": "Rješenja za Smart City",
+  "FEATURE_SMART_CITY_DESC": "Digitalna rješenja prilagođena općinama. Povežite građane s informacijama u realnom vremenu balansiranjem transparentnosti i poboljšane komunikacije.",
+  
+  "FEATURE_VISIBILITY_TITLE": "Poboljšana Vidljivost",
+  "FEATURE_VISIBILITY_DESC": "Putem digitalnih znakova i mobilnih aplikacija, sadržaj doseže više građana i omogućava bolju angažiranost vaše zajednice.",
+  
+  "FEATURE_ANALYTICS_TITLE": "Podaci Koji Važu",
+  "FEATURE_ANALYTICS_DESC": "Iskoristite snagu analitike u realnom vremenu. Pratite angažiranost, nadzrite zdravlje prikaza i donosite odluke vođene podacima kako biste bolje služili svojoj zajednici.",
+  
+  "FEATURE_VALUE_TITLE": "Bez Rizika s Maksimalnom Vrijednosti",
+  "FEATURE_VALUE_DESC": "Napredna digitalna infrastruktura bez financijskog ili operativnog rizika, izgrađena na dokazanoj platformi dizajniranoj za općine.",
+  
+  "FEATURE_REALTIME_TITLE": "Sustav u Realnom Vremenu",
+  "FEATURE_REALTIME_DESC": "Vaš sadržaj se ažurira trenutno na svim zaslonima. Odgovorite na hitne situacije, objavite događaje i zadržite građane informiranima u realnom vremenu.",
+  
+  "FEATURE_SETUP_TITLE": "Jednostavna Konfiguracija i Upravljanje",
+  "FEATURE_SETUP_DESC": "Intuitivna platforma dizajnirana za općinske timove. Upravljajte svim sadržajem, zaslonima i interakcijama s građanima s jedne jedinstvene nadzorne ploče.",
+  
+  "BENEFITS_TITLE": "Jedna Platforma, Svaki Zaslon",
+  "BENEFITS_SUBTITLE": "ORATOR isporučuje vaš sadržaj bezproblemu kroz vanjske digitalne toteme, unutarnje prikaze, web portale i mobilne uređaje - sve upravljano s jedne nadzorne ploče.",
+  
+  "BENEFITS_OUTDOOR_TOTEMS": "Vanjski Digitalni Totemi",
+  "BENEFITS_OUTDOOR_TOTEMS_DESC": "Vanjski prikazi visoke vidljivosti",
+  
+  "BENEFITS_MOBILE_WEB": "Mobilni i Web Portal",
+  "BENEFITS_MOBILE_WEB_DESC": "Platforma za angažiranost građana",
+  
+  "BENEFITS_ADMIN_DASHBOARD": "Kontrolna Ploča Administratora",
+  "BENEFITS_ADMIN_DASHBOARD_DESC": "Centralizirano upravljanje sadržajem",
+  
+  "BENEFITS_KEY_BENEFITS_TITLE": "Ključne Prednosti",
+  "BENEFITS_CLOUD": "Upravljanje sadržajem u oblaku",
+  "BENEFITS_MULTI_DISPLAY": "Podrška za više zaslona (vanjske toteme, unutarnje zaslone, mobilne)",
+  "BENEFITS_CITIZEN_PORTAL": "Portal za angažiranost građana",
+  "BENEFITS_REPORTING": "Prijava problema i praćenje",
+  "BENEFITS_ANALYTICS": "Kontrolna ploča analitike u realnom vremenu",
+  "BENEFITS_EMERGENCY": "Mogućnost hitnog zaobilaženja",
+  "BENEFITS_SCHEDULED": "Planirane vremenske trake sadržaja",
+  
+  "STATS_MUNICIPALITIES": "Općine",
+  "STATS_DISPLAYS": "Digitalni Prikazi",
+  "STATS_MESSAGES": "Isporučene Poruke",
+  "STATS_CITIZENS": "Angažirani Građani",
+  
+  "TRANSFORM_TITLE": "Transformirajte Kako Građani Sudjeluju",
+  "TRANSFORM_SUBTITLE": "Komunikacija u realnom vremenu koja jača vezu između općina i njihovih zajednica.",
+  
+  "DEMO_TITLE": "Zatraži Demo",
+  "DEMO_FULL_NAME_LABEL": "Potpuno Ime",
+  "DEMO_FULL_NAME_PLACEHOLDER": "Jovan Horvat",
+  "DEMO_EMAIL_LABEL": "E-mail",
+  "DEMO_EMAIL_PLACEHOLDER": "jovan@opcina.hr",
+  "DEMO_ORGANIZATION_LABEL": "Organizacija",
+  "DEMO_ORGANIZATION_PLACEHOLDER": "Grad...",
+  "DEMO_MESSAGE_LABEL": "Poruka",
+  "DEMO_MESSAGE_PLACEHOLDER": "Ispričaj nam o tvojim potrebama...",
+  "DEMO_CANCEL_BUTTON": "Otkaži",
+  "DEMO_SUBMIT_BUTTON": "Pošalji Zahtjev",
+  
+  "DEMO_ERROR_FULL_NAME": "Potpuno ime je obavezno",
+  "DEMO_ERROR_EMAIL": "E-mail je obavezan",
+  "DEMO_ERROR_INVALID_EMAIL": "Unesi validan e-mail",
+  "DEMO_ERROR_ORGANIZATION": "Organizacija je obavezna",
+  "DEMO_ERROR_MESSAGE": "Poruka je obavezna",
+  "DEMO_ERROR_CAPTCHA": "Molim te potvrdi da nisi robot",
+  
+  "DEMO_SUCCESS_MESSAGE": "Demo zahtjev uspješno poslан!",
+  "DEMO_ERROR_GENERIC": "Nešto je pošlo po zlu!",
+  
+  "FOOTER_TAGLINE": "Platforma za Smart City Digital Signage",
+  "FOOTER_PRODUCT_HEADING": "Proizvod",
+  "FOOTER_PRODUCT_FEATURES": "Značajke",
+  "FOOTER_PRODUCT_BENEFITS": "Prednosti",
+  "FOOTER_PRODUCT_DEMO": "Demo",
+  "FOOTER_COMPANY_HEADING": "Tvrtka",
+  "FOOTER_COMPANY_ABOUT": "O Nama",
+  "FOOTER_COMPANY_CONTACT": "Kontakt",
+  "FOOTER_COPYRIGHT": "ORATOR. Sva prava zadržana."
+}
