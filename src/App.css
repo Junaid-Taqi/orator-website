@@ -307,7 +307,7 @@ html, body, *{
   aspect-ratio: 16/10;
   min-width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 
 .hero-card-placeholder {

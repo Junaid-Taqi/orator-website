@@ -88,7 +88,7 @@ export default function DemoModal({ onClose }) {
     };
 
     return (
-        <div className="demo-modal-overlay" onClick={onClose}>
+        <div className="demo-modal-overlay">
             <div className="demo-modal" onClick={(e) => e.stopPropagation()}>
                 <h2 className="demo-modal-title">{t('DEMO_TITLE')}</h2>
                 <form className="demo-modal-form" onSubmit={(e) => { e.preventDefault(); handleSubmitDemo(); }}>
