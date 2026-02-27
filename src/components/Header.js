@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 export default function Header({ menuOpen, setMenuOpen, closeMenu, openDemoModal }) {
     const { t, i18n } = useTranslation();
     
-    
+
     const handleLanguageChange = (lang) => {
         i18n.changeLanguage(lang);
         localStorage.setItem('language', lang);
@@ -20,7 +20,7 @@ export default function Header({ menuOpen, setMenuOpen, closeMenu, openDemoModal
                         aria-label="Close menu"
                     />
                 )}
-                <a href="#home" className="logo-wrap" onClick={closeMenu}>
+                <a href="home" className="logo-wrap" onClick={closeMenu}>
                     <LogoIcon />
                     <span className="logo-text">ORATOR</span>
                 </a>
@@ -43,7 +43,7 @@ export default function Header({ menuOpen, setMenuOpen, closeMenu, openDemoModal
                     <li><a href="/web/guest/login" className="btn btn-green">{t('HEADER_LOGIN')}</a></li>
                     <li>
                         <a
-                            href="web/guest/home"
+                            href="home"
                             className="btn btn-cyan"
                             rel="noopener noreferrer"
                             onClick={closeMenu}
