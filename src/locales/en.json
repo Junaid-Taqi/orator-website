@@ -4,6 +4,8 @@
   "HEADER_CONTACT": "Contact",
   "HEADER_REQUEST_DEMO": "Request Demo",
   "HEADER_LOGIN": "Login",
+  "HEADER_REGISTER": "Register",
+  "HEADER_LOGOUT": "Logout",
   "HEADER_PARTNERSHIP": "Home",
   
   "HERO_TITLE": "Smart City Digital Signage Platform",

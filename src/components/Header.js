@@ -3,7 +3,11 @@ import { useTranslation } from 'react-i18next';
 
 export default function Header({ menuOpen, setMenuOpen, closeMenu, openDemoModal }) {
     const { t, i18n } = useTranslation();
+    const hasLiferayUser = !!sessionStorage.getItem('liferayUser');
     
+    const handleLogout = () => {
+        window.location.href = '/c/portal/logout';
+    };
 
     const handleLanguageChange = (lang) => {
         i18n.changeLanguage(lang);
@@ -36,11 +40,6 @@ export default function Header({ menuOpen, setMenuOpen, closeMenu, openDemoModal
                     <span className="nav-toggle-bar" />
                 </button>
                 <ul className="nav-links">
-                    <li><a href="#features" onClick={closeMenu}>{t('HEADER_FEATURES')}</a></li>
-                    <li><a href="#benefits" onClick={closeMenu}>{t('HEADER_BENEFITS')}</a></li>
-                    <li><a href="#contact" onClick={closeMenu}>{t('HEADER_CONTACT')}</a></li>
-                    <li><a href="#demo" className="btn btn-cyan" onClick={(e) => { e.preventDefault(); openDemoModal(); }}>{t('HEADER_REQUEST_DEMO')}</a></li>
-                    <li><a href="/web/guest/login" className="btn btn-green">{t('HEADER_LOGIN')}</a></li>
                     <li>
                         <a
                             href="home"
@@ -51,6 +50,19 @@ export default function Header({ menuOpen, setMenuOpen, closeMenu, openDemoModal
                             {t('HEADER_PARTNERSHIP')}
                         </a>
                     </li>
+                    <li><a href="#features" onClick={closeMenu}>{t('HEADER_FEATURES')}</a></li>
+                    <li><a href="#benefits" onClick={closeMenu}>{t('HEADER_BENEFITS')}</a></li>
+                    <li><a href="#contact" onClick={closeMenu}>{t('HEADER_CONTACT')}</a></li>
+                    <li><a href="#demo" className="btn btn-cyan" onClick={(e) => { e.preventDefault(); openDemoModal(); }}>{t('HEADER_REQUEST_DEMO')}</a></li>
+                    {!hasLiferayUser && (
+                        <>
+                            <li><a href="/web/guest/login" className="btn btn-green">{t('HEADER_LOGIN')}</a></li>
+                            <li><a href="/web/guest/home#/register" className="btn btn-cyan">{t('HEADER_REGISTER')}</a></li>
+                        </>
+                    )}
+                    {hasLiferayUser && (
+                        <li><button type="button" className="btn btn-green" onClick={handleLogout}>{t('HEADER_LOGOUT')}</button></li>
+                    )}
                     <li className="language-selector">
                         <select 
                             value={i18n.language} 
