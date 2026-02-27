@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 
 export default function Header({ menuOpen, setMenuOpen, closeMenu, openDemoModal }) {
     const { t, i18n } = useTranslation();
-
+    
+    
     const handleLanguageChange = (lang) => {
         i18n.changeLanguage(lang);
         localStorage.setItem('language', lang);
@@ -40,6 +41,16 @@ export default function Header({ menuOpen, setMenuOpen, closeMenu, openDemoModal
                     <li><a href="#contact" onClick={closeMenu}>{t('HEADER_CONTACT')}</a></li>
                     <li><a href="#demo" className="btn btn-cyan" onClick={(e) => { e.preventDefault(); openDemoModal(); }}>{t('HEADER_REQUEST_DEMO')}</a></li>
                     <li><a href="/web/guest/login" className="btn btn-green">{t('HEADER_LOGIN')}</a></li>
+                    <li>
+                        <a
+                            href="web/guest/home"
+                            className="btn btn-cyan"
+                            rel="noopener noreferrer"
+                            onClick={closeMenu}
+                        >
+                            {t('HEADER_PARTNERSHIP')}
+                        </a>
+                    </li>
                     <li className="language-selector">
                         <select 
                             value={i18n.language} 
