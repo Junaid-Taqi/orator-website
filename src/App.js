@@ -74,7 +74,7 @@ function App() {
 
             <Transform openDemoModal={openDemoModal}/>
 
-            <Footer/>
+            <Footer openDemoModal={openDemoModal}/>
 
             {/* Request Demo Modal */}
             {demoModalOpen && (

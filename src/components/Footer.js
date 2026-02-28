@@ -1,7 +1,7 @@
 import LogoIcon from './LogoIcon';
 import { useTranslation } from 'react-i18next';
 
-export default function Footer() {
+export default function Footer({ openDemoModal }) {
     const { t } = useTranslation();
 
     return (
@@ -19,7 +19,7 @@ export default function Footer() {
                         <h4>{t('FOOTER_PRODUCT_HEADING')}</h4>
                         <a href="#features">{t('FOOTER_PRODUCT_FEATURES')}</a>
                         <a href="#benefits">{t('FOOTER_PRODUCT_BENEFITS')}</a>
-                        <a href="#demo">{t('FOOTER_PRODUCT_DEMO')}</a>
+                        <a href="#demo" onClick={(e) => { e.preventDefault(); openDemoModal(); }}>{t('FOOTER_PRODUCT_DEMO')}</a>
                     </div>
                     <div className="footer-col">
                         <h4>{t('FOOTER_COMPANY_HEADING')}</h4>
