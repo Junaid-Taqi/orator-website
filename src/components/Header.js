@@ -75,7 +75,7 @@ export default function Header({ menuOpen, setMenuOpen, closeMenu, openDemoModal
                                 className="language-dropdown"
                             >
                                 <option value="en">English</option>
-                                <option value="hr">Hrvatski</option>
+                                <option value="hr">Croatian</option>
                             </select>
                         </div>
                     </li>

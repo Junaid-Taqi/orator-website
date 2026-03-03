@@ -12,14 +12,16 @@ const resources = {
   }
 };
 
-const savedLanguage = localStorage.getItem('language') || 'en';
+// try to restore previously selected language, default to Croatian (hr)
+const savedLanguage = localStorage.getItem('language') || 'hr';
 
 i18n
   .use(initReactI18next)
   .init({
     resources,
     lng: savedLanguage,
-    fallbackLng: 'en',
+    // if translation is missing, fall back to Croatian as well
+    fallbackLng: 'hr',
     interpolation: {
       escapeValue: false
     }
