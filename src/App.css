@@ -162,7 +162,7 @@ body,
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 20px;
-  padding: 5px 12px;
+  padding: 10px 12px;
   transition: border-color var(--transition), background var(--transition);
   cursor: pointer;
 }
@@ -342,7 +342,6 @@ body,
 .hero-card {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  aspect-ratio: 16/10;
   min-width: 100%;
   display: flex;
   justify-content: center;
