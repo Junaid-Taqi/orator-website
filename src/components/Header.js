@@ -57,7 +57,6 @@ export default function Header({ menuOpen, setMenuOpen, closeMenu, openDemoModal
                     {!hasLiferayUser && (
                         <>
                             <li><a href="/web/guest/login" className="btn btn-green">{t('HEADER_LOGIN')}</a></li>
-                            <li><a href="/web/guest/home#/register" className="btn btn-cyan">{t('HEADER_REGISTER')}</a></li>
                         </>
                     )}
                     {hasLiferayUser && (
