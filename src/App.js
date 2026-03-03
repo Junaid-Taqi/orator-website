@@ -54,8 +54,6 @@ function App() {
 
     return (
         <div className="landing">
-            {/* Help widget */}
-            <a href="#help" className="help-widget" aria-label="Help">?</a>
 
             <Header
                 menuOpen={menuOpen}
