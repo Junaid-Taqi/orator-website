@@ -90,5 +90,8 @@
   "FOOTER_COMPANY_HEADING": "Company",
   "FOOTER_COMPANY_ABOUT": "About",
   "FOOTER_COMPANY_CONTACT": "Contact",
-  "FOOTER_COPYRIGHT": "ORATOR. All rights reserved."
+  "FOOTER_COPYRIGHT": "ORATOR. All rights reserved.",
+
+  "WHY_CHOOSE_ORATOR": "Why Choose ORATOR?",
+  "WHY_CHOOSE_ORATOR_DESC": "Built specifically for municipalities and public organizations to enhance citizen engagement and streamline communication"
 }

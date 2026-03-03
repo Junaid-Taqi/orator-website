@@ -63,9 +63,9 @@ export default function Features() {
     return (
         <section id="features" className="section why-choose">
             <div className="container">
-                <h2 className="section-title">Why Choose ORATOR?</h2>
+                <h2 className="section-title">{t('WHY_CHOOSE_ORATOR')}</h2>
                 <p className="section-subtitle">
-                    Built specifically for municipalities and public organizations to enhance citizen engagement and streamline communication
+                    {t('WHY_CHOOSE_ORATOR_DESC')}
                 </p>
                 <div className="features-grid">
                     {featuresData.map((feature, index) => (
