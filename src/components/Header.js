@@ -53,14 +53,14 @@ export default function Header({ menuOpen, setMenuOpen, closeMenu, openDemoModal
                     <li><a href="#features" onClick={closeMenu}>{t('HEADER_FEATURES')}</a></li>
                     <li><a href="#benefits" onClick={closeMenu}>{t('HEADER_BENEFITS')}</a></li>
                     <li><a href="#contact" onClick={closeMenu}>{t('HEADER_CONTACT')}</a></li>
-                    <li><a href="#demo" className="btn btn-cyan" onClick={(e) => { e.preventDefault(); openDemoModal(); }}>{t('HEADER_REQUEST_DEMO')}</a></li>
+                    <li className="request-demo-link"><a href="#demo" className="btn btn-cyan" onClick={(e) => { e.preventDefault(); openDemoModal(); }}>{t('HEADER_REQUEST_DEMO')}</a></li>
                     {!hasLiferayUser && (
                         <>
-                            <li><a href="/web/guest/login" className="btn btn-green">{t('HEADER_LOGIN')}</a></li>
+                            <li className="login-link"><a href="/web/guest/login" className="btn btn-green">{t('HEADER_LOGIN')}</a></li>
                         </>
                     )}
                     {hasLiferayUser && (
-                        <li><button type="button" className="btn btn-green" onClick={handleLogout}>{t('HEADER_LOGOUT')}</button></li>
+                        <li className="logout-link"><button type="button" className="btn btn-green" onClick={handleLogout}>{t('HEADER_LOGOUT')}</button></li>
                     )}
                     <li className="language-selector">
                         <select 
