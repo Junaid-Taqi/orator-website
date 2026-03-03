@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 export default function Header({ menuOpen, setMenuOpen, closeMenu, openDemoModal }) {
     const { t, i18n } = useTranslation();
     const hasLiferayUser = !!sessionStorage.getItem('liferayUser');
-    
+
     const handleLogout = () => {
         window.location.href = '/c/portal/logout';
     };
@@ -63,14 +63,21 @@ export default function Header({ menuOpen, setMenuOpen, closeMenu, openDemoModal
                         <li className="logout-link"><button type="button" className="btn btn-green" onClick={handleLogout}>{t('HEADER_LOGOUT')}</button></li>
                     )}
                     <li className="language-selector">
-                        <select 
-                            value={i18n.language} 
-                            onChange={(e) => handleLanguageChange(e.target.value)}
-                            className="language-dropdown"
-                        >
-                            <option value="en">English</option>
-                            <option value="hr">Hrvatski</option>
-                        </select>
+                        <div className="lang-select-wrapper">
+                            <svg className="lang-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="2" y1="12" x2="22" y2="12" />
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg>
+                            <select
+                                value={i18n.language}
+                                onChange={(e) => handleLanguageChange(e.target.value)}
+                                className="language-dropdown"
+                            >
+                                <option value="en">English</option>
+                                <option value="hr">Hrvatski</option>
+                            </select>
+                        </div>
                     </li>
                 </ul>
             </nav>
