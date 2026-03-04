@@ -31,7 +31,7 @@ export default function Header({ menuOpen, setMenuOpen, closeMenu, openDemoModal
 
         return () => {
             document.removeEventListener('keydown', handleEsc);
-            document.body.style.overflow = 'auto';
+            document.body.style.overflow = '';
         };
     }, [menuOpen, closeMenu]);
 

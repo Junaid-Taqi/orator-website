@@ -1,5 +1,5 @@
 import './App.css';
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -20,37 +20,6 @@ function App() {
         setMenuOpen(false);
     };
     const closeDemoModal = () => setDemoModalOpen(false);
-
-    useEffect(() => {
-        const handleEscape = (e) => {
-            if (e.key === 'Escape') {
-                setMenuOpen(false);
-            }
-        };
-
-        if (menuOpen) {
-            document.addEventListener('keydown', handleEscape);
-            document.body.style.overflow = 'hidden';
-        } else {
-            // If only DemoModal is open, it handles its own overflow/escape.
-            // But wait, if menuOpen is false, we remove this listener.
-            // What if I just rely on DemoModal to close itself via the onClose prop?
-            // That is safer.
-        }
-
-        if (menuOpen) {
-            document.addEventListener('keydown', handleEscape);
-            document.body.style.overflow = 'hidden';
-        }
-
-        return () => {
-            document.removeEventListener('keydown', handleEscape);
-            if (!demoModalOpen) {
-                document.body.style.overflow = '';
-            }
-        };
-    }, [menuOpen, demoModalOpen]);
-
 
     return (
         <div className="landing">
