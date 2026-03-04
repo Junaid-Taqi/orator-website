@@ -11,7 +11,7 @@ export default function Header({ menuOpen, setMenuOpen, closeMenu, openDemoModal
 
     const handleLanguageChange = (lang) => {
         i18n.changeLanguage(lang);
-        localStorage.setItem('language', lang);
+        sessionStorage.setItem('language', lang);
     };
 
     return (

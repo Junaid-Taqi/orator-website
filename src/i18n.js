@@ -13,7 +13,7 @@ const resources = {
 };
 
 // try to restore previously selected language, default to Croatian (hr)
-const savedLanguage = localStorage.getItem('language') || 'hr';
+const savedLanguage = sessionStorage.getItem('language') || 'hr';
 
 i18n
   .use(initReactI18next)
@@ -27,9 +27,9 @@ i18n
     }
   });
 
-// Save language to localStorage whenever it changes
+// Save language to sessionStorage whenever it changes
 i18n.on('languageChanged', (lng) => {
-  localStorage.setItem('language', lng);
+  sessionStorage.setItem('language', lng);
 });
 
 export default i18n;
