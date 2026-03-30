@@ -1,97 +1,97 @@
 {
-  "HEADER_FEATURES": "Značajke",
+  "HEADER_FEATURES": "Rješenja",
   "HEADER_BENEFITS": "Prednosti",
   "HEADER_CONTACT": "Kontakt",
-  "HEADER_REQUEST_DEMO": "Zatraži Demo",
+  "HEADER_REQUEST_DEMO": "Zatraži demo",
   "HEADER_LOGIN": "Prijava",
   "HEADER_REGISTER": "Registracija",
   "HEADER_LOGOUT": "Odjava",
-  "HEADER_PARTNERSHIP": "Javni portal",
-  
-  "HERO_TITLE": "Platforma za Smart City Digital Signage",
-  "HERO_SUBTITLE": "Osnažite vašu općinu s ORATOR-om - kompletnom platformom za digitalnu komunikaciju koja povezuje građane, upravlja sadržajem i isporučuje informacije u realnom vremenu preko svih kanala.",
-  "HERO_GET_STARTED": "Započni →",
-  "HERO_WATCH_DEMO": "Reproduciraj video",
-  
-  "FEATURE_SMART_CITY_TITLE": "Rješenja za Smart City",
-  "FEATURE_SMART_CITY_DESC": "Digitalna rješenja prilagođena općinama. Povežite građane s informacijama u realnom vremenu balansiranjem transparentnosti i poboljšane komunikacije.",
-  
-  "FEATURE_VISIBILITY_TITLE": "Poboljšana Vidljivost",
-  "FEATURE_VISIBILITY_DESC": "Putem digitalnih znakova i mobilnih aplikacija, sadržaj doseže više građana i omogućava bolju angažiranost vaše zajednice.",
-  
-  "FEATURE_ANALYTICS_TITLE": "Podaci Koji Važu",
-  "FEATURE_ANALYTICS_DESC": "Iskoristite snagu analitike u realnom vremenu. Pratite angažiranost, nadzrite zdravlje prikaza i donosite odluke vođene podacima kako biste bolje služili svojoj zajednici.",
-  
-  "FEATURE_VALUE_TITLE": "Bez Rizika s Maksimalnom Vrijednosti",
-  "FEATURE_VALUE_DESC": "Napredna digitalna infrastruktura bez financijskog ili operativnog rizika, izgrađena na dokazanoj platformi dizajniranoj za općine.",
-  
-  "FEATURE_REALTIME_TITLE": "Sustav u Realnom Vremenu",
-  "FEATURE_REALTIME_DESC": "Vaš sadržaj se ažurira trenutno na svim zaslonima. Odgovorite na hitne situacije, objavite događaje i zadržite građane informiranima u realnom vremenu.",
-  
-  "FEATURE_SETUP_TITLE": "Jednostavna Konfiguracija i Upravljanje",
-  "FEATURE_SETUP_DESC": "Intuitivna platforma dizajnirana za općinske timove. Upravljajte svim sadržajem, zaslonima i interakcijama s građanima s jedne jedinstvene nadzorne ploče.",
-  
-  "BENEFITS_TITLE": "Jedna Platforma, Svaki Zaslon",
-  "BENEFITS_SUBTITLE": "ORATOR isporučuje vaš sadržaj bezproblemu kroz vanjske digitalne toteme, unutarnje prikaze, web portale i mobilne uređaje - sve upravljano s jedne nadzorne ploče.",
-  
-  "BENEFITS_OUTDOOR_TOTEMS": "Vanjski Digitalni Totemi",
-  "BENEFITS_OUTDOOR_TOTEMS_DESC": "Vanjski prikazi visoke vidljivosti",
-  
-  "BENEFITS_MOBILE_WEB": "Mobilni i Web Portal",
-  "BENEFITS_MOBILE_WEB_DESC": "Platforma za angažiranost građana",
-  
-  "BENEFITS_ADMIN_DASHBOARD": "Kontrolna Ploča Administratora",
-  "BENEFITS_ADMIN_DASHBOARD_DESC": "Centralizirano upravljanje sadržajem",
-  
-  "BENEFITS_KEY_BENEFITS_TITLE": "Ključne Prednosti",
+  "HEADER_PARTNERSHIP": "Partnerstvo",
+
+  "HERO_TITLE": "Partner lokalnim samoupravama u digitalnoj transformaciji lokalne zajednice",
+  "HERO_SUBTITLE": "ORATOR pomaže lokalnim samoupravama, ustanovama i partnerima zajednice u modernizaciji komunikacije, povećanju lokalne vidljivosti, smanjenju troškova i pravovremenom informiranju građana kroz jedinstvenu digitalnu platformu.",
+  "HERO_GET_STARTED": "Saznaj više →",
+  "HERO_WATCH_DEMO": "Pogledaj demo",
+
+  "FEATURE_SMART_CITY_TITLE": "Rješenje za lokalne samouprave i zajednice",
+  "FEATURE_SMART_CITY_DESC": "ORATOR je razvijen za gradove, općine, javne ustanove i sve dionike lokalne zajednice koji žele unaprijediti transparentnost, dostupnost informacija i kvalitetu komunikacije s građanima.",
+
+  "FEATURE_VISIBILITY_TITLE": "Veća lokalna vidljivost",
+  "FEATURE_VISIBILITY_DESC": "Važne informacije, događanja, obavijesti i lokalne inicijative postaju vidljivije kroz digitalne toteme, unutarnje zaslone, web portal i mobilne kanale, čime zajednica ostaje povezana i informirana.",
+
+  "FEATURE_ANALYTICS_TITLE": "Pametni uvidi za bolje odluke",
+  "FEATURE_ANALYTICS_DESC": "Pratite prikaz sadržaja, stanje mreže zaslona i angažman korisnika u stvarnom vremenu. Donosite kvalitetnije odluke na temelju podataka i učinkovitije upravljajte lokalnom komunikacijom.",
+
+  "FEATURE_VALUE_TITLE": "Smanjenje troškova i veća učinkovitost",
+  "FEATURE_VALUE_DESC": "Digitalizacijom komunikacije smanjuju se troškovi ispisa, distribucije i ručnog upravljanja informacijama. ORATOR omogućuje učinkovitiji rad, veću kontrolu i dugoročnu vrijednost za lokalne samouprave.",
+
+  "FEATURE_REALTIME_TITLE": "Informacije u stvarnom vremenu",
+  "FEATURE_REALTIME_DESC": "Objavite obavijesti, događanja, servisne informacije i hitne poruke trenutno na svim povezanim kanalima. Građani i svi sudionici lokalne zajednice dobivaju pravovremene i relevantne informacije kada su najpotrebnije.",
+
+  "FEATURE_SETUP_TITLE": "Jednostavno upravljanje iz jednog sustava",
+  "FEATURE_SETUP_DESC": "Intuitivna platforma osmišljena za timove u lokalnoj upravi, ustanovama i partnerskim organizacijama. Upravljajte sadržajem, zaslonima, rasporedima i komunikacijom kroz jednu centralnu nadzornu ploču.",
+
+  "BENEFITS_TITLE": "Jedna platforma za sve kanale lokalne komunikacije",
+  "BENEFITS_SUBTITLE": "ORATOR omogućuje jednostavnu objavu i upravljanje sadržajem na vanjskim digitalnim totemima, unutarnjim zaslonima, web portalu i mobilnim uređajima — sve iz jednog centralnog sustava.",
+
+  "BENEFITS_OUTDOOR_TOTEMS": "Vanjski digitalni totemi",
+  "BENEFITS_OUTDOOR_TOTEMS_DESC": "Vidljiva i moderna komunikacija na ključnim javnim lokacijama",
+
+  "BENEFITS_MOBILE_WEB": "Web i mobilni portal",
+  "BENEFITS_MOBILE_WEB_DESC": "Digitalni kanal za bolju povezanost građana i lokalne zajednice",
+
+  "BENEFITS_ADMIN_DASHBOARD": "Administratorska nadzorna ploča",
+  "BENEFITS_ADMIN_DASHBOARD_DESC": "Centralizirano upravljanje sadržajem, kanalima i prikazima",
+
+  "BENEFITS_KEY_BENEFITS_TITLE": "Ključne prednosti",
   "BENEFITS_CLOUD": "Upravljanje sadržajem u oblaku",
-  "BENEFITS_MULTI_DISPLAY": "Podrška za više zaslona (vanjske toteme, unutarnje zaslone, mobilne)",
-  "BENEFITS_CITIZEN_PORTAL": "Portal za angažiranost građana",
-  "BENEFITS_REPORTING": "Prijava problema i praćenje",
-  "BENEFITS_ANALYTICS": "Kontrolna ploča analitike u realnom vremenu",
-  "BENEFITS_EMERGENCY": "Mogućnost hitnog zaobilaženja",
-  "BENEFITS_SCHEDULED": "Planirane vremenske trake sadržaja",
-  
-  "STATS_MUNICIPALITIES": "Općine",
-  "STATS_DISPLAYS": "Digitalni Prikazi",
-  "STATS_MESSAGES": "Isporučene Poruke",
-  "STATS_CITIZENS": "Angažirani Građani",
-  
-  "TRANSFORM_TITLE": "Transformirajte Kako Građani Sudjeluju",
-  "TRANSFORM_SUBTITLE": "Komunikacija u realnom vremenu koja jača vezu između općina i njihovih zajednica.",
-  
-  "DEMO_TITLE": "Zatraži Demo",
-  "DEMO_FULL_NAME_LABEL": "Potpuno Ime",
-  "DEMO_FULL_NAME_PLACEHOLDER": "Jovan Horvat",
+  "BENEFITS_MULTI_DISPLAY": "Podrška za više kanala prikaza i komunikacije",
+  "BENEFITS_CITIZEN_PORTAL": "Portal za građane i lokalnu zajednicu",
+  "BENEFITS_REPORTING": "Prijava problema i lokalnih potreba",
+  "BENEFITS_ANALYTICS": "Analitika i nadzor u stvarnom vremenu",
+  "BENEFITS_EMERGENCY": "Brza objava hitnih i prioritetnih poruka",
+  "BENEFITS_SCHEDULED": "Planiranje i automatizacija objave sadržaja",
+
+  "STATS_MUNICIPALITIES": "Lokalne samouprave",
+  "STATS_DISPLAYS": "Digitalni prikazi",
+  "STATS_MESSAGES": "Objavljene poruke",
+  "STATS_CITIZENS": "Dosegnuti građani",
+
+  "TRANSFORM_TITLE": "Transformirajte način na koji lokalna zajednica komunicira",
+  "TRANSFORM_SUBTITLE": "Digitalna komunikacija u stvarnom vremenu koja povezuje lokalne samouprave, ustanove, građane i partnere zajednice kroz jedan moderan i učinkovit sustav.",
+
+  "DEMO_TITLE": "Zatraži demo",
+  "DEMO_FULL_NAME_LABEL": "Ime i prezime",
+  "DEMO_FULL_NAME_PLACEHOLDER": "Ivan Horvat",
   "DEMO_EMAIL_LABEL": "E-mail",
-  "DEMO_EMAIL_PLACEHOLDER": "jovan@opcina.hr",
+  "DEMO_EMAIL_PLACEHOLDER": "ivan@grad.hr",
   "DEMO_ORGANIZATION_LABEL": "Organizacija",
-  "DEMO_ORGANIZATION_PLACEHOLDER": "Grad...",
+  "DEMO_ORGANIZATION_PLACEHOLDER": "Grad / općina / ustanova / partner",
   "DEMO_MESSAGE_LABEL": "Poruka",
-  "DEMO_MESSAGE_PLACEHOLDER": "Ispričaj nam o tvojim potrebama...",
-  "DEMO_CANCEL_BUTTON": "Otkaži",
-  "DEMO_SUBMIT_BUTTON": "Pošalji Zahtjev",
-  
-  "DEMO_ERROR_FULL_NAME": "Potpuno ime je obavezno",
+  "DEMO_MESSAGE_PLACEHOLDER": "Opišite potrebe vaše organizacije...",
+  "DEMO_CANCEL_BUTTON": "Odustani",
+  "DEMO_SUBMIT_BUTTON": "Pošalji zahtjev",
+
+  "DEMO_ERROR_FULL_NAME": "Ime i prezime su obavezni",
   "DEMO_ERROR_EMAIL": "E-mail je obavezan",
-  "DEMO_ERROR_INVALID_EMAIL": "Unesi validan e-mail",
-  "DEMO_ERROR_ORGANIZATION": "Organizacija je obavezna",
+  "DEMO_ERROR_INVALID_EMAIL": "Unesite ispravnu e-mail adresu",
+  "DEMO_ERROR_ORGANIZATION": "Naziv organizacije je obavezan",
   "DEMO_ERROR_MESSAGE": "Poruka je obavezna",
-  "DEMO_ERROR_CAPTCHA": "Molim te potvrdi da nisi robot",
-  
-  "DEMO_SUCCESS_MESSAGE": "Demo zahtjev uspješno poslан!",
-  "DEMO_ERROR_GENERIC": "Nešto je pošlo po zlu!",
-  
-  "FOOTER_TAGLINE": "Platforma za Smart City Digital Signage",
+  "DEMO_ERROR_CAPTCHA": "Potvrdite da niste robot",
+
+  "DEMO_SUCCESS_MESSAGE": "Zahtjev za demo uspješno je poslan!",
+  "DEMO_ERROR_GENERIC": "Došlo je do pogreške. Pokušajte ponovno.",
+
+  "FOOTER_TAGLINE": "Partner lokalnim samoupravama u digitalnoj transformaciji lokalne zajednice",
   "FOOTER_PRODUCT_HEADING": "Proizvod",
-  "FOOTER_PRODUCT_FEATURES": "Značajke",
+  "FOOTER_PRODUCT_FEATURES": "Rješenja",
   "FOOTER_PRODUCT_BENEFITS": "Prednosti",
   "FOOTER_PRODUCT_DEMO": "Demo",
   "FOOTER_COMPANY_HEADING": "Tvrtka",
-  "FOOTER_COMPANY_ABOUT": "O Nama",
+  "FOOTER_COMPANY_ABOUT": "O nama",
   "FOOTER_COMPANY_CONTACT": "Kontakt",
-  "FOOTER_COPYRIGHT": "ORATOR. Sva prava zadržana.",
+  "FOOTER_COPYRIGHT": "ORATOR. Sva prava pridržana.",
 
-  "WHY_CHOOSE_ORATOR": "Zašto odabrati ORATOR?",
-  "WHY_CHOOSE_ORATOR_DESC": "Izrađeno posebno za općine i javne organizacije kako bi se poboljšao angažman građana i pojednostavila komunikacija"
+  "WHY_CHOOSE_ORATOR": "Zašto ORATOR?",
+  "WHY_CHOOSE_ORATOR_DESC": "Zato što ORATOR nije samo platforma, već partner lokalnim samoupravama, ustanovama i organizacijama u izgradnji povezanije, vidljivije i učinkovitije lokalne zajednice uz niže troškove i bolju komunikaciju sa svim sudionicima."
 }
