@@ -33,8 +33,14 @@ export default function Hero({ openDemoModal }) {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentWordIndex((prev) => (prev + 1) % rotatingWords.length);
-            setCurrentWordIndex2((prev) => (prev + 1) % rotatingWordsSecond.length);
+            setFade(false); // fade out first
+
+            setTimeout(() => {
+                setCurrentWordIndex((prev) => (prev + 1) % rotatingWords.length);
+                setCurrentWordIndex2((prev) => (prev + 1) % rotatingWordsSecond.length);
+
+                setFade(true); // fade in new text
+            }, 500); // fade duration match CSS
         }, 5000);
 
         return () => clearInterval(interval);
@@ -44,9 +50,9 @@ export default function Hero({ openDemoModal }) {
         <>
             <section id="home" className="hero">
                 <div className="hero-content">
-                    <h1 className="hero-title"><span>{rotatingWords[currentWordIndex]}</span> {t('HERO_TITLE')}</h1>
+                    <h1 className="hero-title"><span className={fade ? "fade-in" : "fade-out"}>{rotatingWords[currentWordIndex]}</span> {t('HERO_TITLE')}</h1>
                     <h3 className="heroSubtitle">
-                        {t('BUILDING')} <span className="fade-word">{rotatingWordsSecond[currentWordIndex2]}</span> {t('COMMUNITIES')}.
+                        {t('BUILDING')} <span className={fade ? "fade-in" : "fade-out"}>{rotatingWordsSecond[currentWordIndex2]}</span> {t('COMMUNITIES')}.
                     </h3>
                     <p className="hero-subtitle">
                         {t('HERO_SUBTITLE')}

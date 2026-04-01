@@ -17,7 +17,7 @@ const Transform = ({ openDemoModal }) => {
                         className="btn btn-cyan btn-lg transform-button"
                         onClick={openDemoModal}
                     >
-                        Schedule a Demo →
+                        {t('SCHEDULE_DEMO')} →
                     </button>
                 </div>
             </section>
