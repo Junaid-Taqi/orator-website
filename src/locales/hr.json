@@ -7,9 +7,11 @@
   "HEADER_REGISTER": "Registracija",
   "HEADER_LOGOUT": "Odjava",
   "HEADER_PARTNERSHIP": "Javni portal",
+  "BUILDING": "zgrada",
+  "COMMUNITIES": "zajednice",
 
-  "HERO_TITLE": "PARTNER LOKALNIM SAMOUPRAVAMA U DIGITALNOJ TRANSFORMACIJI ZAJEDNICE",
-  "HERO_SUBTITLE": "ORATOR pomaže lokalnim samoupravama, ustanovama i partnerima zajednice u modernizaciji komunikacije, povećanju lokalne vidljivosti, smanjenju troškova i pravovremenom informiranju građana kroz jedinstvenu digitalnu platformu.",
+  "HERO_TITLE": "partner za lokalne samouprave",
+  "HERO_SUBTITLE": "Osnažujemo lokalne samouprave, zajednice i ključne dionike digitalnim alatima i rješenjima za suvremenu transformaciju.",
   "HERO_GET_STARTED": "Saznaj više →",
   "HERO_WATCH_DEMO": "Pogledaj demo",
 

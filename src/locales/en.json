@@ -7,9 +7,11 @@
   "HEADER_REGISTER": "Register",
   "HEADER_LOGOUT": "Logout",
   "HEADER_PARTNERSHIP": "Public Portal",
+  "BUILDING": "Building",
+  "COMMUNITIES": "communities",
   
-  "HERO_TITLE": "Smart City Digital Signage Platform",
-  "HERO_SUBTITLE": "Empower your municipality with ORATOR - the complete digital communication platform that connects citizens, manages content, and delivers real-time information across all channels.",
+  "HERO_TITLE": "partner for local governments",
+  "HERO_SUBTITLE": "Empowering cities, municipalities, and public institutions with modern communication tools and citizen engagement solutions.",
   "HERO_GET_STARTED": "Get Started →",
   "HERO_WATCH_DEMO": "Play Video",
   

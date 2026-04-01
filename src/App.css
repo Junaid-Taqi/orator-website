@@ -1015,6 +1015,30 @@ body,
   }
 }
 
+.hero-title span, .heroSubtitle span {
+  display: inline-block;
+  background: linear-gradient(90deg, #1fe37c, #1ddbd1, #1bb8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  opacity: 0;
+  animation: fadeText 3s ease-in-out infinite;
+}
+
+@keyframes fadeText {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 
 
