@@ -41,7 +41,7 @@
   "BENEFITS_OUTDOOR_TOTEMS_DESC": "Vidljiva i moderna komunikacija na ključnim javnim lokacijama",
 
   "BENEFITS_MOBILE_WEB": "Web i mobilni portal",
-  "BENEFITS_MOBILE_WEB_DESC": "Digitalni kanal za bolju povezanost građana i lokalne zajednicu",
+  "BENEFITS_MOBILE_WEB_DESC": "Digitalni kanal za bolju povezanost građana i lokalne zajednice",
 
   "BENEFITS_ADMIN_DASHBOARD": "Administratorska nadzorna ploča",
   "BENEFITS_ADMIN_DASHBOARD_DESC": "Centralizirano upravljanje sadržajem, kanalima i prikazima",
@@ -49,7 +49,7 @@
   "BENEFITS_KEY_BENEFITS_TITLE": "Ključne prednosti",
   "BENEFITS_CLOUD": "Upravljanje sadržajem u oblaku",
   "BENEFITS_MULTI_DISPLAY": "Podrška za više kanala prikaza i komunikacije",
-  "BENEFITS_CITIZEN_PORTAL": "Portal za građane i lokalnu zajednicu",
+  "BENEFITS_CITIZEN_PORTAL": "Portal za građane i lokalnu zajednice",
   "BENEFITS_REPORTING": "Prijava problema i lokalnih potreba",
   "BENEFITS_ANALYTICS": "Analitika i nadzor u stvarnom vremenu",
   "BENEFITS_EMERGENCY": "Brza objava hitnih i prioritetnih poruka",
@@ -61,7 +61,7 @@
   "STATS_CITIZENS": "Dosegnuti građani",
 
   "TRANSFORM_TITLE": "Transformirajte način na koji lokalna zajednica komunicira",
-  "TRANSFORM_SUBTITLE": "Digitalna komunikacija u stvarnom vremenu koja povezuje lokalne samouprave, ustanove, građane i partnere zajednicu kroz jedan moderan i učinkovit sustav.",
+  "TRANSFORM_SUBTITLE": "Digitalna komunikacija u stvarnom vremenu koja povezuje lokalne samouprave, ustanove, građane i partnere zajednice kroz jedan moderan i učinkovit sustav.",
 
   "DEMO_TITLE": "Zatraži demo",
   "DEMO_FULL_NAME_LABEL": "Ime i prezime",
@@ -96,5 +96,5 @@
   "FOOTER_COPYRIGHT": "ORATOR. Sva prava pridržana.",
 
   "WHY_CHOOSE_ORATOR": "Zašto ORATOR?",
-  "WHY_CHOOSE_ORATOR_DESC": "Zato što ORATOR nije samo platforma, već partner lokalnim samoupravama, ustanovama i organizacijama u izgradnji povezanije, vidljivije i učinkovitije lokalne zajednicu uz niže troškove i bolju komunikaciju sa svim sudionicima."
+  "WHY_CHOOSE_ORATOR_DESC": "Zato što ORATOR nije samo platforma, već partner lokalnim samoupravama, ustanovama i organizacijama u izgradnji povezanije, vidljivije i učinkovitije lokalne zajednice uz niže troškove i bolju komunikaciju sa svim sudionicima."
 }
